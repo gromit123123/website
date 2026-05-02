@@ -1,0 +1,56 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Digital Space</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="index.html">My Space.</a></div>
+        <nav class="site-nav">
+            <a href="about.html">About</a>
+            <a href="gear.html">Gear</a>
+            <a href="photos.html">Photos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section fade-in">
+            <h1>About</h1>
+            <p class="hero-subtitle">我是一名中学生，热爱网球运动与文学阅读。业余时间喜欢用手机记录城市风景与生活细节，同时正在系统练习英语表达。</p>
+        </section>
+
+        <section class="feed-section fade-in">
+            <h2 class="section-title">Say Hello</h2>
+            <form id="contact-form" class="interactive-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Leave a message..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <dialog id="success-modal" class="modal">
+        <div class="modal-content">
+            <h3>Message Sent</h3>
+            <p>留言已收到，我会尽快回复。</p>
+            <button id="close-modal" class="btn-secondary">Close</button>
+        </div>
+    </dialog>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
